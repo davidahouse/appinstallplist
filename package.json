@@ -1,0 +1,31 @@
+{
+  "name": "appinstallplist",
+  "main": "bin/appinstallplist.js",
+  "version": "1.0.0",
+  "description": "A command line app for generating an app install plist file for iOS apps",
+  "license": "MIT",
+  "repository": "davidahouse/appinstallplist",
+  "preferGlobal": true,
+  "bin": {
+    "appinstallplist": "bin/appinstallplist.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "commander": "^5.0.0",
+    "figlet": "^1.2.1",
+    "js-yaml": "^3.13.1",
+    "line-reader": "^0.4.0",
+    "pkginfo": "^0.4.1",
+    "rc": "^1.2.8"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.5.0"
+  },
+  "scripts": {
+    "lint": "eslint $(find . -name \"*.js\" -not -path \"./node_modules/*\" -not -path \"./public/*\")",
+    "lint-fix": "eslint --fix $(find . -name \"*.js\" -not -path \"./node_modules/*\" -not -path \"./public/*\")"
+  }
+}
